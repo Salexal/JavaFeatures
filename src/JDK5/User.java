@@ -12,6 +12,15 @@ public class User {
     private String password;
     private String name;
     public int status;
+
+    private void eat(){
+        System.out.println("it's eating");
+    }
+
+    public void sing(){
+        System.out.println("it's sing song");
+    }
+
     public User() {
     }
 
@@ -51,5 +60,10 @@ public class User {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return this.id+" "+this.name+" "+this.password+" "+this.status;
     }
 }
