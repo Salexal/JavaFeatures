@@ -83,8 +83,9 @@ public class Reflection {
             for (int j = 0; j < parameterTypes.length; j++) {
                 System.out.print(parameterTypes[j]+",");
             }
-            if(parameterTypes.length==0)
+            if(parameterTypes.length==0) {
                 System.out.print("无参数");
+            }
             System.out.println();
         }
     }
@@ -176,8 +177,9 @@ public class Reflection {
             for (int i = 0; i < parameterTypes.length; i++) {
                 System.out.print(parameterTypes[i].getName()+",");
             }
-            if(parameterTypes.length == 0)
+            if(parameterTypes.length == 0) {
                 System.out.print("无参数");
+            }
             System.out.println();
         }
     }
