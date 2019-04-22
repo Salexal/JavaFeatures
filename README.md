@@ -16,10 +16,10 @@
 
 <details>
   <summary>JDK7</summary>
-     1. 捕获多个异常 可以使用 | 分割
-     2. 泛型实例化类型自动推断
-     3. 增加二进制表示
-     4. 数字中可添加分隔符
-     5. try-with-resources （暂无！）
+     1. 捕获多个异常 可以使用 | 分割 <br>
+     2. 泛型实例化类型自动推断 <br>
+     3. 增加二进制表示 <br>
+     4. 数字中可添加分隔符 <br>
+     5. try-with-resources （暂无！）<br>
      6. switch中使用String
 </details>
