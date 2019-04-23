@@ -2,6 +2,12 @@ package JDK5.TesttAnnotation;
 
 import java.lang.annotation.*;
 
+/**
+ * @author Shimizu
+ *
+ * 简单诠释了四个元注解的作用：
+ */
+
 //Target说明了Annotation所修饰的对象范围
 @Target(ElementType.FIELD)
 
@@ -19,5 +25,21 @@ import java.lang.annotation.*;
 //@Inherited表示该注解是否对类的子类继承的方法等起作用
 @Inherited
 public @interface MyAnnotation {
+
+    //这样的写法并不是方法，而是一个属性， 当属性名字为value 并且只有一个时，默认可以不写如:@MyAnnotation("Hello World")
+    //default 为当属性不赋值时默认为null
     String value()default "";
+
+    /**
+     * 注解参数的可支持数据类型：
+     *  1.所有基本数据类型（int,float,boolean,byte,double,char,long,short)
+     *  2.String类型
+     *  3.Class类型
+     *  4.enum类型
+     *  5.Annotation类型
+     *  6.以上所有类型的数组
+     */
+
+
+
 }
