@@ -7,4 +7,8 @@ package JDK5.TesttAnnotation;
  *
  */
 public class Annotation {
+    public static void main(String[] args) {
+
+    }
+
 }
