@@ -13,8 +13,5 @@ public class StaticImport {
         double d = pow(3,2);
         System.out.println(abs(-2));
         System.out.println(d);
-
     }
-
-
 }

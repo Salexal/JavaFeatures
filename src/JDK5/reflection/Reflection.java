@@ -1,4 +1,4 @@
-package JDK5;
+package JDK5.reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -44,7 +44,7 @@ public class Reflection {
      */
     public static void oneTest() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         //在User类还在源文件时就直接获取他的字节码文件对象
-        Class clazz1 = Class.forName("JDK5.User");
+        Class clazz1 = Class.forName("JDK5.reflection.User");
         // 通过User的无参数的构造函数来创建对象
         User user = (User) clazz1.newInstance();
 
@@ -59,7 +59,7 @@ public class Reflection {
      */
     public static void twoTest() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //获取字节码
-        Class clazz1 = Class.forName("JDK5.User");
+        Class clazz1 = Class.forName("JDK5.reflection.User");
         //先获取有参构造器 parameterTypes 表示参数列表 可以写 也可以不写，不写默认调用无参构造器  (参数必须是你已有的构造函数对齐)
         Constructor constructor = clazz1.getConstructor(int.class,String.class,String.class);
 
@@ -74,7 +74,7 @@ public class Reflection {
 
     public static void threeTest() throws ClassNotFoundException {
         //获取字节码
-        Class clazz1 = Class.forName("JDK5.User");
+        Class clazz1 = Class.forName("JDK5.reflection.User");
         Constructor[] constructors = clazz1.getConstructors();
         System.out.println("Test3:");
         for(int i = 0;i<constructors.length;i++){
@@ -96,7 +96,7 @@ public class Reflection {
 
     public static void fourTest() throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchFieldException {
         //获取字节码
-        Class clazz1 = Class.forName("JDK5.User");
+        Class clazz1 = Class.forName("JDK5.reflection.User");
         User user = (User) clazz1.newInstance();
         //获取非私有的成员变量 用getField
         Field field1 = clazz1.getField("status");
@@ -117,7 +117,7 @@ public class Reflection {
      */
     public static void fiveTest() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         //获取字节码
-        Class clazz1 = Class.forName("JDK5.User");
+        Class clazz1 = Class.forName("JDK5.reflection.User");
         User user = (User) clazz1.newInstance();
 
         user.setStatus(1);
@@ -135,7 +135,7 @@ public class Reflection {
     public static void sixTest() throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
         System.out.println("Test6:");
         //获取字节码
-        Class clazz1 = Class.forName("JDK5.User");
+        Class clazz1 = Class.forName("JDK5.reflection.User");
         User user = (User) clazz1.newInstance();
         /**
          * clazz.getMethod(name, parameterTypes)
@@ -166,7 +166,7 @@ public class Reflection {
     public static void sevenTest() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         System.out.println("Test7:");
         //获取字节码
-        Class clazz1 = Class.forName("JDK5.User");
+        Class clazz1 = Class.forName("JDK5.reflection.User");
         User user = (User) clazz1.newInstance();
         Method[] methods = clazz1.getDeclaredMethods();
 
@@ -185,7 +185,7 @@ public class Reflection {
     }
 
     /**
-     *
+     * 8.
      */
 
 }

@@ -1,4 +1,4 @@
-package JDK5;
+package JDK5.reflection;
 
 /**
  * @Author: Salexal.fww
