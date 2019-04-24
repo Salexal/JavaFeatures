@@ -29,7 +29,7 @@ public class RepeatingAnnotations {
     public interface Filterable {
     }
 
-    //@analyze 注释Filter被@Repeatable( Filters.class )注释。Filters 只是一个容器，它持有Filter, 编译器尽力向程序员隐藏它的存在。
+    //@analyze： 注释Filter被@Repeatable( Filters.class )注释。Filters 只是一个容器，它持有Filter, 编译器尽力向程序员隐藏它的存在。
     //通过这样的方式，Filterable接口可以被Filter注释两次。另外，反射的API提供一个新方法getAnnotationsByType() 来返回重复注释的类
     //型（注意Filterable.class.getAnnotation( Filters.class )将会返回编译器注入的Filters实例）。
 
