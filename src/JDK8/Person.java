@@ -1,4 +1,4 @@
-package JDK8.MethodReferences.InstanceMethodRef;
+package JDK8;
 
 /**
  * @Author: Shimizu
@@ -23,5 +23,18 @@ public class Person {
 
     public void setBirthday(String birthday) {
         this.birthday = birthday;
+    }
+
+    public Person(String name, String birthday) {
+        this.name = name;
+        this.birthday = birthday;
+    }
+
+    public Person() {
+
+    }
+
+    public Person(String name) {
+        this.name = name;
     }
 }

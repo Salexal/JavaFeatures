@@ -1,5 +1,7 @@
 package JDK8.MethodReferences.InstanceMethodRef;
 
+import JDK8.Person;
+
 import java.util.*;
 
 /**
